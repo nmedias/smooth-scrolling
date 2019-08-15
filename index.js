@@ -36,7 +36,10 @@ export default class Smooth {
       mouseMultiplier: this.options.vs && this.options.vs.mouseMultiplier || 1,
       touchMultiplier: this.options.vs && this.options.vs.touchMultiplier || 1.5,
       firefoxMultiplier: this.options.vs && this.options.vs.firefoxMultiplier || 30,
-      preventTouch: this.options.vs && this.options.vs.preventTouch || true
+      preventTouch: this.options.vs && this.options.vs.preventTouch || false,
+      useKeyboard: this.options.vs && this.options.vs.useKeyboard || false,
+      useTouch: this.options.vs && this.options.vs.useTouch || false,
+      keyStep: this.options.vs && this.options.vs.keyStep || 120
     })
     this.dom = {
       listener: this.options.listener || document.body,
